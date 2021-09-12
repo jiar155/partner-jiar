@@ -6,7 +6,7 @@ client.on('message', message => {
 
 if (!message.guild) return; 
 
-if (message.content === 'setup') { 
+if (message.content === '!R') { 
  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
 if (message.member.voiceChannel) { 
 
@@ -21,48 +21,26 @@ message.member.voiceChannel.join()
 
 } else { 
 
-message.reply('**Please you go to the voice🐱**'); 
+message.reply(' پێویستە تۆ لە ڤۆیسەکە بیت '); 
 
 } 
 
 } 
 
 });
-
-client.on("ready", () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-
-client.on("message", msg => {
-  if (msg.content === "Slaw reklam ") {
-    msg.reply("**tkaiia rawasta takU wlammt dadretaua kissing_cat: ");
-  }
-}); 
-
-
-client.on("ready", () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-
-client.on("message", msg => {
-  if (msg.content === "سلاو رێکلام ") {
-    msg.reply("**تکایە راوەستە تاکوو وڵام دەدرێیتەوە kissing_cat: ");
-  }
-}); 
-
 
 
 client.on("message" , message => {
 
 if(message.channel.type === 'dm') {
 
-if (message.content.startsWith("https://discord.gg/")) {
-    
-  message.author.send(`https://discord.gg/eCXDMdaZA6`) ///Link Server Never ///RaWeN
-    
-  client.channels.get("874049096112046103").send(
-`> RaWeN Up | By: <@${message.author.id}> 
-${message.content}`)
+if (message.content.startsWith("https://discord.gg/%22)) {
+
+  message.author.send( ھات بەلاڤ کرن تو ژیک بەلاڤ کە    https://discord.gg/j3Ur3S5PgC) // لینکی سێرڤەری خۆت لیرە دابنی بە هەتا هەتای بێت
+
+  client.channels.get("880382060504711188").send(
+>  By: <@${message.author.id}> ✅ 
+${message.content})
 }
     }
         })
@@ -71,12 +49,13 @@ ${message.content}`)
 
 
 client.on('ready', () => {
-console.log(`ON ${client.guilds.size} Servers`);
-console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Send Me Linke Your Server | RaWeN Up`) 
+console.log(ON ${client.guilds.size} Servers);
+console.log(Logged in as ${client.user.tag}!);
+client.user.setGame(Jiar) 
 });
 
 
 
 
-client.login("ODg1NDk4ODEwOTkyODM2NjQ5.YTn7CA.1qYyxonWpdw4kcKcI6BPsTg4icI");///Jiar ///Token
+client.login("ODM5MDg5MDk2ODQ0NTA5MjQ0.YJEkng.CuUE0Mvd__26dGxOlaUziVpH4mI");// Your Token
+Discord
